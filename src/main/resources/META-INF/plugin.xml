@@ -1,0 +1,16 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>fi.lipp.plugin.word-mirror</id>
+    <name>Word Mirror</name>
+    <vendor>lippfi</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+    
+    <actions>
+        <action id="fi.lipp.plugin.word-mirror.ReplaceWithNextAntonym" class="fi.lipp.plugin.antonymizer.actions.ReplaceWithNextAntonymAction"/>
+        <action id="fi.lipp.plugin.word-mirror.ReplaceWithPreviousAntonym" class="fi.lipp.plugin.antonymizer.actions.ReplaceWithPreviousAntonymAction"/>
+    </actions>
+</idea-plugin>
